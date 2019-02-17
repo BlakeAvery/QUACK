@@ -13,4 +13,7 @@ repositories {
 
 dependencies {
     testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: "com.twilio.sdk", name: "twilio", version: "7.17.+"
+    compile group: "com.sparkjava", name: "spark-core", version: "2.7.1"
+    compile group: "org.slf4j", name: "slf4j-simple", version: "1.7.21"
 }
