@@ -3,14 +3,12 @@ import net.ufoproducts.*;
 public class Main {
     public static void main(String[] args) {
         ServerSocket succ;
-        //I wanna die
         try {
             succ = new ServerSocket(8051);
         } catch(Exception e) {
             succ = null;
         }
         while(true) {
-            //Main serv code
             try {
                 Socket system = succ.accept();
                 BufferedReader input = new BufferedReader(new InputStreamReader(system.getInputStream()));

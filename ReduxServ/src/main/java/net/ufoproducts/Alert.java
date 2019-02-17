@@ -26,12 +26,9 @@ public class Alert {
             return new Alert("Error", "0", "0",  new Date(), "invalid_req");
         }
         Date date = DateParser.parseDate(fields[3]);
-        System.out.println(date);//for verification that I'm not retarded
+        System.out.println(date);
         return new Alert(fields[0], fields[1], fields[2], date, fields[4]);
     }
-    /*public String toCsv() {
-        return id + "," + lat + "," + lon + "," + request;
-    }*/
     public String toString() {
         return "ID: " + id + ", latitude: " + lat + ", longitude: " + lon + ", time: " + time + ", request: " + request;
     }
